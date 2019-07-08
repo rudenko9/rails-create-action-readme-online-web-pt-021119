@@ -15,7 +15,7 @@ def create
   post.title = params[:title]
   post.description = params[:description]
   post.save
-  redirect_to post_path(@post)
+  redirect_to post_path(@post.id)
 end 
   # add create method here
 end
